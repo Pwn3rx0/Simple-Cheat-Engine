@@ -15,7 +15,7 @@ A lightweight, console-based memory manipulation tool written in C for Windows. 
 
 ## 🛠️ Technical Overview
 
-The tool leverages the **Windows API** to interact with the OS kernel and external memory spaces:
+The tool leverages the **Windows API** to interact with external memory spaces:
 
 * **`CreateToolhelp32Snapshot`**: Snapshots the process list.
 * **`VirtualQueryEx`**: Queries memory page attributes (State, Protect) to ensure the scanner only touches valid, committed memory.
@@ -31,7 +31,7 @@ Compile the source using a C compiler on Windows (e.g., MinGW, MSVC, or Clion).
 
 ### 2. Standard Workflow
 1.  **Open Process:** Run the tool, list processes (Option 1) to find your target's PID, and open it (Option 2).
-2.  **Initial Scan:** Search for a known value (e.g., your current "Health" or "Gold" count) using Option 3.
+2.  **Initial Scan:** Search for a known value (e.g., your current "Health" or "ammo" count) using Option 3.
 3.  **Refine:** Change the value within the target application, then use Option 4 to filter the existing list for the new value.
 4.  **Edit:** Once you have narrowed down the address, use Option 6 to change it or Option 7 to "freeze" it.
 
