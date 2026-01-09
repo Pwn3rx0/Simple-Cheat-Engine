@@ -1,5 +1,4 @@
-# Simple Win32 Memory Scanner
-
+# Simple Cheat Engine
 A lightweight, console-based memory manipulation tool written in C for Windows. This utility allows users to scan the virtual memory of a target process, filter for specific integer values, and modify or "freeze" those values in real-time.
 
 ---
